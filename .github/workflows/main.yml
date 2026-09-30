@@ -1,1 +1,16 @@
-Testing...
+name: React CI CD
+
+on: 
+  push: 
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+setps:
+  - uses: actions/checkout@v4
+  - name: My first step
+    run : 
+      echo "First step is executed"
+
